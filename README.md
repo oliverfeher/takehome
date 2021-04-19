@@ -1,7 +1,7 @@
 # Overview
 A common front-end development task involves inspecting design templates (drafted by the Design team in Adobe XD), then translating those templates into front-end components.
 
-For this assessment, you will be provided a [design template](https://xd.adobe.com/view/4614858b-9a9c-4823-876e-58b84c36082f-1347/specs/) and are tasked to create React components for the two bottom-most blocks that appear in the template: **Customer Reviews** and **Frequently Asked Questions**. You will have 48 hours to complete this assessment from the moment you receive this assessment. Any resources available on the internet can be freely used.
+For this assessment, you will be provided a [design template](https://xd.adobe.com/view/4614858b-9a9c-4823-876e-58b84c36082f-1347/specs/) and are tasked to create React components for the two bottom-most blocks that appear in the template: **Customer Reviews** and **Frequently Asked Questions**. You will have 48 hours to complete this from the moment you receive the assessment. Any resources available on the internet can be freely used.
 
 *Hint: Take some time to become familiar with the Adobe XD interface. You can inspect elements to determine their properties.*
 
