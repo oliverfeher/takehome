@@ -8,13 +8,13 @@ For this assessment, you will be provided a [design template](https://xd.adobe.c
 Data (.js) and image assets will be provided to you in this repository. You must push your final product to GitHub in order for your work to be evaluated.
 
 # Objectives
-1. Visit to the following page to view the design template: https://xd.adobe.com/view/4614858b-9a9c-4823-876e-58b84c36082f-1347/specs/
-2. Create a React component for the Customer Reviews block.
-* Content should mirror the content and appearance of the design template block.
-* Stars should populate and fill according to a given rating (e.g., 4.8/5.0).
-3. Create a React component for the Frequently Asked Questions block.
-* Content should mirror the content and appearance of the design template block.
-* Each FAQ item should be an accordion that expands and collapses to reveal or hide additional text.
+* Visit to the following page to view the design template: https://xd.adobe.com/view/4614858b-9a9c-4823-876e-58b84c36082f-1347/specs/
+* Create a React component for the Customer Reviews block.
+  * Content should mirror the content and appearance of the design template block.
+  * Stars should populate and fill according to a given rating (e.g., 4.8/5.0).
+* Create a React component for the Frequently Asked Questions block.
+  * Content should mirror the content and appearance of the design template block.
+  * Each FAQ item should be an accordion that expands and collapses to reveal or hide additional text.
 
 
 # Getting Started with Create React App
