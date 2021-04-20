@@ -1,3 +1,94 @@
+:root {
+
+  /* Colors: */
+  --ma-light-gray-rgb: #E5E9EA;
+  --ma-light-blue-rgb: #7DAECF;
+  --ma-blue-rgb: #0A558C;
+  --ma-dark-blue-rgb: #043260;
+  --unnamed-color-f1c40f: #F1C40F;
+  --unnamed-color-ffffff: #FFFFFF;
+  --unnamed-color-a3282c: #A3282C;
+  --unnamed-color-cd2026: #CD2026;
+  --unnamed-color-161616: #161616;
+  --ma-teal-rgb: #A6DDE0;
+  
+  /* Font/text values */
+  --unnamed-font-family-roboto: Roboto;
+  --unnamed-font-family-mr-eaves-xl-san-ot: Mr Eaves XL San OT;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-26: 26px;
+  --unnamed-font-size-32: 32px;
+  --unnamed-font-size-40: 40px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-character-spacing-0-64: 0.64px;
+  --unnamed-line-spacing-18: 18px;
+  --unnamed-line-spacing-19: 19px;
+  --unnamed-line-spacing-22: 22px;
+  --unnamed-line-spacing-31: 31px;
+  --unnamed-line-spacing-38: 38px;
+  --unnamed-line-spacing-42: 42px;
+  }
+  
+  /* Character Styles */
+  .unnamed-character-style-1 {
+  font-family: var(--unnamed-font-family-mr-eaves-xl-san-ot);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-40);
+  line-height: var(--unnamed-line-spacing-42);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-161616);
+  }
+  .unnamed-character-style-2 {
+  font-family: var(--unnamed-font-family-mr-eaves-xl-san-ot);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-32);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-161616);
+  }
+  .unnamed-character-style-3 {
+  font-family: var(--unnamed-font-family-mr-eaves-xl-san-ot);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-26);
+  line-height: var(--unnamed-line-spacing-31);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-161616);
+  }
+  .unnamed-character-style-4 {
+  font-family: var(--unnamed-font-family-roboto);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-19);
+  letter-spacing: var(--unnamed-character-spacing-0-64);
+  color: var(--unnamed-color-161616);
+  }
+  .unnamed-character-style-5 {
+  font-family: var(--unnamed-font-family-roboto);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-18);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-161616);
+  }
+  .unnamed-character-style-6 {
+  font-family: var(--unnamed-font-family-roboto);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-22);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-161616);
+  }
+  
 .App {
   text-align: center;
 }

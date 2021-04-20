@@ -17,7 +17,7 @@ const CustomerReviews = () => {
             
             <h1>Customer Reviews</h1>
             
-            <h2 >{customerReviewsData.maScore}/5
+            <h2 className="rating">{customerReviewsData.maScore}/5
                 <img src={ratingStar} alt="star"/>
                 <img src={ratingStar} alt="star"/>
                 <img src={ratingStar} alt="star"/>
