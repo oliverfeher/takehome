@@ -1,1 +1,38 @@
-/* YOUR CUSTOMER REVIEWS STYLE GOES HERE */
+.customer-review-frame {
+    top: 2953px;
+    left: 63px;
+    width: 1140px;
+    height: 547px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background-color: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+h1 {
+
+}
+
+.rating {
+
+}
+
+h4 {
+
+}
+
+.customer-review-card {
+    display: inline-grid;
+    width: 295px;
+    height: auto;
+    box-shadow: 3px 3px 10px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.quote-left {
+    width: 45px;
+    height: 44px;
+}
+
+p {
+    
+}
