@@ -19,6 +19,7 @@ Data `data-module.js` and image assets will be provided `assets/images` to you i
   * Your breakpoint should be `850px`.
   * Only the bottom two blocks.
 * You are provided with a totally empty React project, use this opportunity to develop, import and render these blocks with the best practices.
+* You can push your changes directly to the `master` branch.
 
 
 # Getting Started with Create React App
