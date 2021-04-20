@@ -1,4 +1,5 @@
 import React from 'react';
+import './customer-reviews.css';
 import { customerReviewsData } from '../../data-module.js';
 
 import quoteLeft from '../../Assets/icons/quote-left-solid.png';
@@ -7,12 +8,15 @@ import emptyStar from '../../Assets/icons/empty-star-yellow.svg';
 import halfStar from '../../Assets/icons/half-star-yellow.svg';
 
 const CustomerReviews = () => {
+    
+    
+
     return (
         <div>
             
             <h1>Customer Reviews</h1>
             
-            <h2>{customerReviewsData.maScore}/5</h2>
+            <h2 >{customerReviewsData.maScore}/5</h2>
             <img src={ratingStar} alt="star"/>
             <img src={emptyStar} alt="star"/>
             <img src={halfStar} alt="star"/>
@@ -21,7 +25,7 @@ const CustomerReviews = () => {
             {customerReviewsData.reviews.map((review, index) =>
                 <div key={index}>
                     <img src={quoteLeft} alt="large left quotation" />
-                    <p>{review.quote}</p>
+                    <p dangerouslySetInnerHTML={{__html:review["quote"]}}></p>
                     <p>{review.quoteSource}</p>
                 </div>
             )}
