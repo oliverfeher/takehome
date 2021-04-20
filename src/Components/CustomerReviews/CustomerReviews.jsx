@@ -2,7 +2,6 @@ import React from 'react';
 import { customerReviewsData } from '../../data-module.js';
 
 import quoteLeft from '../../Assets/icons/quote-left-solid.png';
-
 import ratingStar from '../../Assets/icons/rating-star-yellow.svg';
 import emptyStar from '../../Assets/icons/empty-star-yellow.svg';
 import halfStar from '../../Assets/icons/half-star-yellow.svg';
