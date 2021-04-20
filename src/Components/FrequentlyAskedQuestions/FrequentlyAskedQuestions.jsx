@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './frequently-asked-questions.css';
-import '../../App.css';
 // import { Link } from 'react-router-dom';
 import { frequentlyAskedData } from '../../data-module.js';
 
