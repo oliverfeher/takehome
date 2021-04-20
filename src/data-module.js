@@ -1,4 +1,4 @@
-const customerReviewsData = {
+export const customerReviewsData = {
     maScore: 4.8,
     title: 'Read what some customers of the Tuft & Needle Hybrid have to say.',
     reviews: [
@@ -17,7 +17,7 @@ const customerReviewsData = {
     ]
 }
 
-const frequentlyAskedData = {
+export const frequentlyAskedData = {
     questions: [
         {
             question: 'What is the delivery window?',
