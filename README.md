@@ -5,7 +5,7 @@ For this assessment, you will be provided a [design template](https://xd.adobe.c
 
 *Hint: Take some time to become familiar with the Adobe XD interface. You can inspect elements to determine their properties.*
 
-Data `data-module.js` and image assets will be provided `assets/images` to you in this repository. You must push your final product to GitHub in order for your work to be evaluated.
+Data `data-module.js` and image assets will be provided `assets/images`, icons will be in `assets/icons` to you in this repository. You must push your final product to GitHub in order for your work to be evaluated.
 
 # Objectives
 * Visit to the following page to view the design template: https://xd.adobe.com/view/4614858b-9a9c-4823-876e-58b84c36082f-1347/specs/
@@ -27,6 +27,10 @@ Data `data-module.js` and image assets will be provided `assets/images` to you i
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+### `npm i`
+
+To install NPM dependencies.
 
 ### `npm start`
 
