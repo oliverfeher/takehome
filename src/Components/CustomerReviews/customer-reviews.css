@@ -25,20 +25,20 @@
     background-color: #FFFFFF 0% 0% no-repeat padding-box;
 }
 .customer-review-frame h1 {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-32)/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 2.7rem/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
     color: var(--unnamed-color-161616);
     text-align: center;
 }
 .rating {
     text-align: center;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-26)/var(--unnamed-line-spacing-31) var(--unnamed-font-family-mr-eaves-xl-san-ot);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 2.2rem/var(--unnamed-line-spacing-31) var(--unnamed-font-family-mr-eaves-xl-san-ot);
     color: var(--ma-blue-rgb);
 }
 .rating img {
     padding: 0px 0px 0px 15px;
 }
 .customer-review-frame h4 {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-roboto);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 1.3rem/var(--unnamed-line-spacing-22) var(--unnamed-font-family-roboto);
     color: var(--unnamed-color-161616);
     text-align: center;
 }
@@ -57,11 +57,13 @@
     padding: 20px;
 }
 .comment-wrapper {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-roboto);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 1.3rem/var(--unnamed-line-spacing-22) var(--unnamed-font-family-roboto);
     color: var(--unnamed-color-161616);
+    margin: 3%;
     text-align: left;
 }
 .quote-left {
+    position: absolute;
     width: 45px;
     height: 44px;
 }
