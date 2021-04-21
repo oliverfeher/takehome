@@ -11,6 +11,8 @@ import fullStar from '../../Assets/icons/rating-star-yellow.svg';
 const CustomerReviews = () => {
     const rating = customerReviewsData.maScore || 0;
     // const rating = 3.3 || 0;
+
+    //starRating rounds the rating to the nearest 0(emptyStar), .5(halfStar), or 1.0(fullStar)
     const starRating = (Math.round(rating * 2) / 2).toFixed(1);
     
     const getStar = (starRating) => {
@@ -61,9 +63,7 @@ const CustomerReviews = () => {
 
     return (
         <div className="reviews-grid">
-            <div className="hero-wrapper">
-                <img className="hero-image" src={heroImage} alt="grey mattress" />
-            </div>
+            <img className="hero-image" src={heroImage} alt="grey mattress" />
             
             <div className="customer-review-frame">
                 <h1>Customer Reviews</h1>
