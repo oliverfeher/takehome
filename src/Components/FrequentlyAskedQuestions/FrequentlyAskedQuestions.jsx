@@ -14,7 +14,7 @@ const FrequentlyAskedQuestions = () => {
             <div className="faq-bg"></div>
             <div className="faq-container">
                 <h1>Frequently Asked Questions</h1>
-        
+
                 {/* use index to show individual answer onClick  */}
                 {frequentlyAskedData.questions.map((question, index) =>
                     <div key={index}>
@@ -28,15 +28,15 @@ const FrequentlyAskedQuestions = () => {
                         }
                     </div>
                 )}
-    
+
                     <a className="info-btn" href={frequentlyAskedData.ctas[0].link}>
                         <button>
                             {frequentlyAskedData.ctas[0].title}
                             <img src={rightArrow} alt="right arrow" />
                         </button>
                     </a>
-                <img src={faqRightImage} alt="bed with pillows" />
             </div>
+            <img src={faqRightImage} alt="bed with pillows" />
         </div>
     )
 }
