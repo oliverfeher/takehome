@@ -70,13 +70,11 @@ const CustomerReviews = () => {
                     
                 <div>
                     <h2 className="rating"><strong>{rating}</strong>/5
-                        <div>
                             {
                                 getStars(starRating).map((rating, index) => (
                                     <img key={index} src={getStar(rating)} alt="review stars"/>
                                 ))
                             }
-                        </div>
                     </h2>
                 </div>
 
