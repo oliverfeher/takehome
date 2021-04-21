@@ -18,9 +18,8 @@
 .customer-review-frame {
     grid-column: 2 / 5;
     width: 100%;
-    height: auto;
+    height: 100%;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-    background-color: #FFFFFF 0% 0% no-repeat padding-box;
 }
 .customer-review-frame h1 {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 2.7rem/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
@@ -67,8 +66,41 @@
 }
 
 @media (max-width: 850px){
-    /* * {color: red;} */
     .reviews-grid {
-        background-color: #FFFFFF;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% auto 10%;
+        width: 100%;
+    }
+    .hero-image {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        width: 100%;
+        z-index: -1;
+    }    
+    .customer-review-frame {
+        grid-column: 1 / 1;
+        grid-row: 2/6;
+        width: 90%;
+        height: 100vh;
+        background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+        margin: 0 5% 0 5%;
+        padding: 5% 0 5% 0;
+    }
+    .customer-review-frame h1, .customer-review-frame h4, .rating {
+        text-align: left;
+        padding: 0 5% 0 5%;
+    }
+    .review-wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+    .customer-review-card {
+        margin: 5% 5% 5% 10%;
     }
 }
+/* Use this to check the layout at the design size */
+/* @media (min-width: 1280px){
+    * {color: red;}
+} */
