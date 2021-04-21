@@ -10,7 +10,7 @@ import fullStar from '../../Assets/icons/rating-star-yellow.svg';
 
 const CustomerReviews = () => {
     const rating = customerReviewsData.maScore || 0;
-    // const rating = 4.3 || 0;
+    // const rating = 3.3 || 0;
     const starRating = (Math.round(rating * 2) / 2).toFixed(1);
     
     const getStar = (starRating) => {
@@ -23,31 +23,40 @@ const CustomerReviews = () => {
                 return emptyStar;
        }
     }
-    const getStars = (starRating) => {
-        switch (parseFloat(starRating)) {
-            case 5:
-                return [100, 100, 100, 100, 100];
-            case 4.5:
-                return [100, 100, 100, 100, 50];
-            case 4:
-                return [100, 100, 100, 100, 0];
-            case 3.5:
-                return [100, 100, 100, 50, 0];
-            case 3:
-                return [100, 100, 100, 0, 0];
-            case 2.5:
-                return [100, 100, 50, 0, 0];
-            case 2:
-                return [100, 100, 0, 0, 0];
-            case 1.5:
-                return [100, 50, 0, 0, 0];
-            case 1:
-                return [100, 0, 0, 0, 0];
-            case 0.5:
-                return [50, 0, 0, 0, 0];
-            default:
-                return [0, 0, 0, 0, 0];
-        }
+    // const getStars = (starRating) => {
+    //     switch (parseFloat(starRating)) {
+    //         case 5:
+    //             return [100, 100, 100, 100, 100];
+    //         case 4.5:
+    //             return [100, 100, 100, 100, 50];
+    //         case 4:
+    //             return [100, 100, 100, 100, 0];
+    //         case 3.5:
+    //             return [100, 100, 100, 50, 0];
+    //         case 3:
+    //             return [100, 100, 100, 0, 0];
+    //         case 2.5:
+    //             return [100, 100, 50, 0, 0];
+    //         case 2:
+    //             return [100, 100, 0, 0, 0];
+    //         case 1.5:
+    //             return [100, 50, 0, 0, 0];
+    //         case 1:
+    //             return [100, 0, 0, 0, 0];
+    //         case 0.5:
+    //             return [50, 0, 0, 0, 0];
+    //         default:
+    //             return [0, 0, 0, 0, 0];
+    //     }
+    // }
+    const getStars = (rating) => {
+        const stars = [];
+        const [full, part] = parseFloat(rating).toString().split(".");
+        for (let i = 0; i < full; i++) stars.push(100);
+            if (part) stars.push(50);
+        for (let i = full; i < (part ? 4 : 5); i++) stars.push(0);
+
+        return stars;
     }
 
     return (
