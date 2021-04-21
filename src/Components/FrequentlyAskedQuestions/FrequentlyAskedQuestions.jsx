@@ -12,6 +12,7 @@ const FrequentlyAskedQuestions = () => {
     const toggleAnswer = (index) => {
         setShowAnswer(prev => Boolean(!prev[index]) ? {...prev, [index]: true} : {...prev, [index]: false});
     }
+    // console.log(showAnswer)
     
     return (
         <div className="faq-grid">
@@ -21,7 +22,12 @@ const FrequentlyAskedQuestions = () => {
 
                     {frequentlyAskedData.questions.map((question, index) =>
                         <div key={index}>
-                            { question.answer ? <h3 onClick={() => toggleAnswer(index)}>+  {question.question}</h3> : null }
+                            { question.answer ? 
+                                <h3 onClick={() => toggleAnswer(index)}> 
+                                    {showAnswer[index] === true ? '- ' : '+ '} {question.question}
+                                </h3> 
+                                : 
+                                null }
                             { showAnswer[index] ?  <p className="faq-answer"> {question.answer}</p> : null}
                         </div>
                     )}
