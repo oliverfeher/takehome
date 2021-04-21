@@ -35,7 +35,6 @@ const FrequentlyAskedQuestions = () => {
                 </div>
             </div>
             <img className="faq-image" src={faqRightImage} alt="bed with pillows" />
-            <br></br>
         </div>
     )
 }
