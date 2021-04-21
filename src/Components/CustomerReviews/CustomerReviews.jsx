@@ -15,14 +15,12 @@ const CustomerReviews = () => {
 
     return (
         <div className="reviews-grid">
-    {/* grid 1 */}
             <img className="hero-image" src={heroImage} alt="grey mattress" />
             
-    {/* grid 2 */}
             <div className="customer-review-frame">
                 <h1>Customer Reviews</h1>
 
-                {/* useState to fill in the stars based on maScore */}
+                {/* useState to fill in the stars based on maScore use case statements*/}
                 <h2 className="rating">{rating}/5
                     <img src={emptyStar} alt="star"/>
                     <img src={emptyStar} alt="star"/>
@@ -32,15 +30,17 @@ const CustomerReviews = () => {
                 </h2>
 
                 <h4>{customerReviewsData.title}</h4>
-    {/* grid 3, 4, 5 */}
-                {customerReviewsData.reviews.map((review, index) =>
-                    <div className="customer-review-card" key={index}>
-                        <img className="quote-left" src={quoteLeft} alt="large left quotation" />
-                        <p dangerouslySetInnerHTML={{__html:review["quote"]}}></p>
-                        <br></br>
-                        <p>{review.quoteSource}</p>
-                    </div>
-                )}
+                <div className="review-wrapper">
+                    {customerReviewsData.reviews.map((review, index) =>
+                        <div className="customer-review-card" key={index}>
+                            <img className="quote-left" src={quoteLeft} alt="large left quotation" />
+                            <div className="comment-wrapper">
+                                <p dangerouslySetInnerHTML={{__html:review["quote"]}}></p>
+                                <p>{review.quoteSource}</p>
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     )

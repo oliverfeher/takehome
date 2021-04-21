@@ -11,22 +11,27 @@
     height: 35vh;
 }
 
+.hero-image, .customer-review-frame {
+    grid-row: 1 / 2;
+}
+
 .customer-review-frame {
-    grid-column: 1/6;
-    margin-top: 40px;
-    margin-left: 25px;
+    grid-column: 2/-1;
+    width: 100%;
+    margin-top: 15%;
+    margin-left: -17%;
+    padding: 4%;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background-color: #FFFFFF 0% 0% no-repeat padding-box;
 }
 .customer-review-frame h1 {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-32)/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
-    letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-161616);
     text-align: center;
 }
 .rating {
+    text-align: center;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-26)/var(--unnamed-line-spacing-31) var(--unnamed-font-family-mr-eaves-xl-san-ot);
-    letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--ma-blue-rgb);
 }
 .rating img {
@@ -34,27 +39,28 @@
 }
 .customer-review-frame h4 {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-roboto);
-    letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-161616);
     text-align: center;
 }
-
+.review-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
 
 .customer-review-card {
     display: inline-grid;
-    grid-template-columns: auto auto auto;
-    width: 295px;
+    margin: 2%;
+    width: 24%;
     height: auto;
     box-shadow: 3px 3px 10px #00000029;
     border-radius: 4px;
     padding: 20px;
-
+}
+.comment-wrapper {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-roboto);
-    letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-161616);
     text-align: left;
 }
-
 .quote-left {
     width: 45px;
     height: 44px;
