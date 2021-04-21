@@ -1,1 +1,49 @@
-/* YOUR FAQ STYLE GOES HERE */
+.faq-bg {
+    top: 3237px;
+    left: 0px;
+    width: 100vw;
+    height: 912px;
+    background: var(--ma-teal-rgb) 0% 0% no-repeat padding-box;
+    background: #A6DDE0 0% 0% no-repeat padding-box;
+    opacity: 0.14;
+}
+.faq-container {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-32)/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-161616);
+    text-align: left;
+    /* font: normal normal normal 32px/38px Mr Eaves XL San OT; */
+    /* letter-spacing: 0px; */
+    /* color: #161616; */
+    opacity: 1;
+}
+.faq-container button {
+    width: 206px;
+    height: 49px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0-64);
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    background: var(--ma-dark-blue-rgb) 0% 0% no-repeat padding-box;
+    /* background: #043260 0% 0% no-repeat padding-box; */
+    /* font: normal normal bold 16px/19px Roboto; */
+    /* letter-spacing: 0.64px; */
+    /* color: #FFFFFF; */
+    text-transform: uppercase;
+    outline: none;
+    opacity: 1;
+}
+    .faq-container button:hover {
+        width: 206px;
+        height: 49px;
+    }
+.faq-container a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+.faq-container button img {
+    padding: 0px 0px 0px 50px;
+    height: 1em;
+    width: 1em;
+}

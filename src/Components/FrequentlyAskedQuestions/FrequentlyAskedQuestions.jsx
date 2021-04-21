@@ -12,16 +12,17 @@ const FrequentlyAskedQuestions = () => {
     
     return (
         <div>
+            <div className="faq-bg"></div>
+            <div className="faq-container">
             <h1>Frequently Asked Questions</h1>
 
             {frequentlyAskedData.questions.map((question, index) =>
                 <div key={index}>
-                    <h2>{question.question}</h2>
                     { textToggle ?
-                        <button onClick={ () => textToggleState(!textToggle)}>+</button>
+                        <h3 style={{ cursor: 'pointer' }} onClick={ () => textToggleState(!textToggle)}>+ {question.question}</h3>
                         :
                         <div>
-                            <button onClick={ () => textToggleState(!textToggle)}>-</button>
+                            <h3 style={{ cursor: 'pointer' }} onClick={ () => textToggleState(!textToggle)}>- {question.question}</h3>
                             <p>{question.answer}</p>
                         </div>
                     }
@@ -35,6 +36,7 @@ const FrequentlyAskedQuestions = () => {
                 </button>
             {/* </Link> */}
             <img src={faqRightImage} alt="bed with pillows" />
+            </div>
         </div>
     )
 }
