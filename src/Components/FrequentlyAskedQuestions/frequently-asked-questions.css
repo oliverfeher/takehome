@@ -21,20 +21,33 @@
     grid-column: 1 / 5;
     height: 100%;
     width: 100%;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 1.3rem/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
-    color: var(--unnamed-color-161616);
-    align-items: center;
-    text-align: left;
+    color: var(--unnamed-color-161616);   
+}
+.faq-container h1 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 2.7rem/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
+}
+.faq-container h3 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-26)/var(--unnamed-line-spacing-31) var(--unnamed-font-family-mr-eaves-xl-san-ot);
+    margin: 5% 0 2% 0;
 }
 .faq-questions {
+    text-align: left;
+    margin: 0 5% 0 15%;
+    padding: 0;
     cursor: pointer;
 }
 
+.faq-answer {
+    margin: 0;
+    padding: 0 5% 0 3%;
+    font: var(--unnamed-font-style-normal) normal 1.3rem/var(--unnamed-line-spacing-22) var(--unnamed-font-family-roboto);
+}
+
 .info-btn button{
+    margin: 5% 0 0 0;
     height: 50px;
     width: 200px;
     color: var(--unnamed-color-ffffff);
-    text-align: left;
     background: var(--ma-blue-rgb) 0% 0% no-repeat padding-box;
     border: none;
     border-radius: 5px;

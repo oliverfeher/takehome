@@ -21,17 +21,17 @@ const FrequentlyAskedQuestions = () => {
 
                     {frequentlyAskedData.questions.map((question, index) =>
                         <div key={index}>
-                            { question.answer ? <h3 onClick={() => toggleAnswer(index)}>+ {question.question}</h3> : null }
-                            { showAnswer[index] ?  <p>{question.answer}</p> : null}
+                            { question.answer ? <h3 onClick={() => toggleAnswer(index)}>+  {question.question}</h3> : null }
+                            { showAnswer[index] ?  <p className="faq-answer"> {question.answer}</p> : null}
                         </div>
                     )}
 
-                        <a className="info-btn" href={frequentlyAskedData.ctas[0].link}>
-                            <button>
-                                {frequentlyAskedData.ctas[0].title}
-                                <img src={rightArrow} alt="right arrow" />
-                            </button>
-                        </a>
+                    <a className="info-btn" href={frequentlyAskedData.ctas[0].link}>
+                        <button>
+                            {frequentlyAskedData.ctas[0].title}
+                            <img src={rightArrow} alt="right arrow" />
+                        </button>
+                    </a>
                 </div>
             </div>
             <img className="faq-image" src={faqRightImage} alt="bed with pillows" />
