@@ -35,6 +35,7 @@
     text-align: center;
 }
 .rating {
+    /* display: inline-block; */
     text-align: center;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 2.2rem/var(--unnamed-line-spacing-31) var(--unnamed-font-family-mr-eaves-xl-san-ot);
     color: var(--ma-blue-rgb);

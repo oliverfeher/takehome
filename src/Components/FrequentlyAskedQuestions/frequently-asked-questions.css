@@ -26,6 +26,10 @@
     align-items: center;
     text-align: left;
 }
+.faq-questions {
+    cursor: pointer;
+}
+
 .info-btn button{
     height: 50px;
     width: 200px;

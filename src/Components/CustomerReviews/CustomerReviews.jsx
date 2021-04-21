@@ -9,9 +9,9 @@ import halfStar from '../../Assets/icons/half-star-yellow.svg';
 import fullStar from '../../Assets/icons/rating-star-yellow.svg';
 
 const CustomerReviews = () => {
-    let rating = customerReviewsData.maScore || 0;
-    // let rating = 3.1 || 0;
-    let stars = [0,0,0,0,0];
+    const rating = customerReviewsData.maScore || 0;
+    // const rating = 3.1 || 0;
+    const stars = [0,0,0,0,0];
 
     return (
         <div className="reviews-grid">

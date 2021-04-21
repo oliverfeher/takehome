@@ -7,7 +7,11 @@ import faqRightImage from '../../Assets/images/faqRightImage.jpeg';
 
 const FrequentlyAskedQuestions = () => {
     
-    const [textToggle, textToggleState] = useState(true)
+    const [showAnswer, setShowAnswer] = useState({});
+
+    const toggleAnswer = (index) => {
+        setShowAnswer(prev => Boolean(!prev[index]) ? {...prev, [index]: true} : {...prev, [index]: false});
+    }
     
     return (
         <div className="faq-grid">
@@ -15,17 +19,10 @@ const FrequentlyAskedQuestions = () => {
                 <div className="faq-questions">
                     <h1>Frequently Asked Questions</h1>
 
-                    {/* use index to show individual answer onClick  */}
                     {frequentlyAskedData.questions.map((question, index) =>
                         <div key={index}>
-                            { textToggle ?
-                                <h3 style={{ cursor: 'pointer' }} onClick={ () => textToggleState(!textToggle)}>+ {question.question}</h3>
-                                :
-                                <div>
-                                    <h3 style={{ cursor: 'pointer' }} onClick={ () => textToggleState(!textToggle)}>- {question.question}</h3>
-                                    <p>{question.answer}</p>
-                                </div>
-                            }
+                            { question.answer ? <h3 onClick={() => toggleAnswer(index)}>+ {question.question}</h3> : null }
+                            { showAnswer[index] ?  <p>{question.answer}</p> : null}
                         </div>
                     )}
 
