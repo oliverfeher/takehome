@@ -10,33 +10,35 @@ const FrequentlyAskedQuestions = () => {
     const [textToggle, textToggleState] = useState(true)
     
     return (
-        <div>
-            <div className="faq-bg"></div>
+        <div className="faq-grid">
             <div className="faq-container">
-                <h1>Frequently Asked Questions</h1>
+                <div className="faq-questions">
+                    <h1>Frequently Asked Questions</h1>
 
-                {/* use index to show individual answer onClick  */}
-                {frequentlyAskedData.questions.map((question, index) =>
-                    <div key={index}>
-                        { textToggle ?
-                            <h3 style={{ cursor: 'pointer' }} onClick={ () => textToggleState(!textToggle)}>+ {question.question}</h3>
-                            :
-                            <div>
-                                <h3 style={{ cursor: 'pointer' }} onClick={ () => textToggleState(!textToggle)}>- {question.question}</h3>
-                                <p>{question.answer}</p>
-                            </div>
-                        }
-                    </div>
-                )}
+                    {/* use index to show individual answer onClick  */}
+                    {frequentlyAskedData.questions.map((question, index) =>
+                        <div key={index}>
+                            { textToggle ?
+                                <h3 style={{ cursor: 'pointer' }} onClick={ () => textToggleState(!textToggle)}>+ {question.question}</h3>
+                                :
+                                <div>
+                                    <h3 style={{ cursor: 'pointer' }} onClick={ () => textToggleState(!textToggle)}>- {question.question}</h3>
+                                    <p>{question.answer}</p>
+                                </div>
+                            }
+                        </div>
+                    )}
 
-                    <a className="info-btn" href={frequentlyAskedData.ctas[0].link}>
-                        <button>
-                            {frequentlyAskedData.ctas[0].title}
-                            <img src={rightArrow} alt="right arrow" />
-                        </button>
-                    </a>
+                        <a className="info-btn" href={frequentlyAskedData.ctas[0].link}>
+                            <button>
+                                {frequentlyAskedData.ctas[0].title}
+                                <img src={rightArrow} alt="right arrow" />
+                            </button>
+                        </a>
+                </div>
             </div>
-            <img src={faqRightImage} alt="bed with pillows" />
+            <img className="faq-image" src={faqRightImage} alt="bed with pillows" />
+            <br></br>
         </div>
     )
 }

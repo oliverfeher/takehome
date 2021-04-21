@@ -15,7 +15,9 @@ const CustomerReviews = () => {
 
     return (
         <div className="reviews-grid">
-            <img className="hero-image" src={heroImage} alt="grey mattress" />
+            <div className="hero-wrapper">
+                <img className="hero-image" src={heroImage} alt="grey mattress" />
+            </div>
             
             <div className="customer-review-frame">
                 <h1>Customer Reviews</h1>

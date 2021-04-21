@@ -1,22 +1,37 @@
-.faq-bg {
-    background: var(--ma-teal-rgb) 0% 0% no-repeat padding-box;
-    background: #A6DDE0 0% 0% no-repeat padding-box;
-    opacity: 0.14;
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 10% 520px 10%;
+
+    width: 100%;
+    background: rgba(166, 221, 224, .14);
 }
+
+.faq-image {
+    grid-column: 5 / -1;
+    height: 500px;
+    width: 100%;
+}
+
+.faq-image, .faq-container {
+    grid-row: 2 / -1;
+}
+
 .faq-container {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-32)/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
-    letter-spacing: var(--unnamed-character-spacing-0);
+    grid-column: 1 / 5;
+    height: 100%;
+    width: 100%;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 1.3rem/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
     color: var(--unnamed-color-161616);
+    align-items: center;
     text-align: left;
 }
 .info-btn button{
+    height: 50px;
+    width: 200px;
     color: var(--unnamed-color-ffffff);
     text-align: left;
     background: var(--ma-blue-rgb) 0% 0% no-repeat padding-box;
-    /* background: #043260 0% 0% no-repeat padding-box; */
-    /* font: normal normal bold 16px/19px Roboto; */
-    /* letter-spacing: 0.64px; */
-    /* color: #FFFFFF; */
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -26,9 +41,9 @@
     text-align: center;
     cursor: pointer;
 }
-    .info-btn:hover {
+    .info-btn button:hover {
         cursor: pointer;
-        background: var(--ma-drk-blue-rgb);
+        background: var(--ma-dark-blue-rgb);
     }
 .info-btn img {
     padding: 0 0 0 40px;

@@ -5,18 +5,23 @@
     width: 100%;
 }
 
-.hero-image {
-    grid-column: 1/6;
-    width: 100%;
-    height: 35vh;
+.hero-wrapper {
+    grid-column: 1 / 6;
+    background: rgba(166, 221, 224, .14);
 }
 
-.hero-image, .customer-review-frame {
+.hero-image {
+    /* grid-column: 1 / 6; */
+    width: 100%;
+    height: 50%;
+}
+
+.hero-wrapper, .customer-review-frame {
     grid-row: 1 / 2;
 }
 
 .customer-review-frame {
-    grid-column: 2/-1;
+    grid-column: 2 / -1;
     width: 100%;
     margin-top: 15%;
     margin-left: -17%;
