@@ -11,7 +11,6 @@
     width: 100%;
     height: 30vh;
 }
-/* Wrap hero-image to make up for excess grid at bottom */
 .hero-wrapper, .customer-review-frame {
     grid-row: 2 / 4;
 }
@@ -68,5 +67,8 @@
 }
 
 @media (max-width: 850px){
-
+    /* * {color: red;} */
+    .reviews-grid {
+        background-color: #FFFFFF;
+    }
 }

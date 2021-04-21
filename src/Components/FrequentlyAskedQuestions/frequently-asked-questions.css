@@ -28,13 +28,6 @@
     color: var(--unnamed-color-161616);   
     /* background: rgba(166, 221, 224, .14); */
 }
-.faq-container h1 {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 2.7rem/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
-}
-.faq-container h3 {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-26)/var(--unnamed-line-spacing-31) var(--unnamed-font-family-mr-eaves-xl-san-ot);
-    margin: 5% 0 2% 0;
-}
 .faq-questions {
     height: 100vh;
     text-align: left;
@@ -42,10 +35,17 @@
     padding: 0;
     cursor: pointer;
 }
+.faq-questions h1 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 2.7rem/var(--unnamed-line-spacing-38) var(--unnamed-font-family-mr-eaves-xl-san-ot);
+}
+.faq-questions h3 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-26)/var(--unnamed-line-spacing-31) var(--unnamed-font-family-mr-eaves-xl-san-ot);
+    margin: 2% 0 2% 0;
+}
 
 .faq-answer {
     margin: 0;
-    padding: 0 5% 0 3%;
+    padding: 0 5% 2% 3%;
     font: var(--unnamed-font-style-normal) normal 1.3rem/var(--unnamed-line-spacing-22) var(--unnamed-font-family-roboto);
 }
 
@@ -74,5 +74,37 @@
 }
 
 @media (max-width: 850px){
-
+    .faq-grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% auto 10%;
+    }
+    .faq-image {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    .faq-container {
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+        height: auto;
+        width: 90%;
+        color: var(--unnamed-color-161616);   
+        background: #F1FAFB; 
+    }
+    .faq-questions {
+        margin: 0;
+        padding: 5%;
+    }
+    .faq-questions h3 {
+        margin: 0;
+        padding: 5% 5% 5% 0;
+    }
+    .faq-answers {
+        /* margin: 0; */
+        padding: 5% 10%;
+    }
 }
