@@ -11,11 +11,14 @@ import fullStar from '../../Assets/icons/rating-star-yellow.svg';
 const CustomerReviews = () => {
 
     let rating = customerReviewsData.maScore
+    let stars = [];
 
     return (
-        <div>
+        <div className="reviews-grid">
+    {/* grid 1 */}
             <img className="hero-image" src={heroImage} alt="grey mattress" />
             
+    {/* grid 2 */}
             <div className="customer-review-frame">
                 <h1>Customer Reviews</h1>
 
@@ -29,7 +32,7 @@ const CustomerReviews = () => {
                 </h2>
 
                 <h4>{customerReviewsData.title}</h4>
-
+    {/* grid 3, 4, 5 */}
                 {customerReviewsData.reviews.map((review, index) =>
                     <div className="customer-review-card" key={index}>
                         <img className="quote-left" src={quoteLeft} alt="large left quotation" />
