@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './customer-reviews.css';
 import { customerReviewsData } from '../../data-module.js';
 
@@ -10,8 +10,45 @@ import fullStar from '../../Assets/icons/rating-star-yellow.svg';
 
 const CustomerReviews = () => {
     const rating = customerReviewsData.maScore || 0;
-    // const rating = 3.1 || 0;
-    const stars = [0,0,0,0,0];
+    // const rating = 4.3 || 0;
+    const starRating = (Math.round(rating * 2) / 2).toFixed(1);
+    
+    const getStar = (starRating) => {
+       switch (starRating) {
+            case 100:
+                return fullStar;
+            case 50:
+                return halfStar;
+            default:
+                return emptyStar;
+       }
+    }
+    const getStars = (starRating) => {
+        switch (parseFloat(starRating)) {
+            case 5:
+                return [100, 100, 100, 100, 100];
+            case 4.5:
+                return [100, 100, 100, 100, 50];
+            case 4:
+                return [100, 100, 100, 100, 0];
+            case 3.5:
+                return [100, 100, 100, 50, 0];
+            case 3:
+                return [100, 100, 100, 0, 0];
+            case 2.5:
+                return [100, 100, 50, 0, 0];
+            case 2:
+                return [100, 100, 0, 0, 0];
+            case 1.5:
+                return [100, 50, 0, 0, 0];
+            case 1:
+                return [100, 0, 0, 0, 0];
+            case 0.5:
+                return [50, 0, 0, 0, 0];
+            default:
+                return [0, 0, 0, 0, 0];
+        }
+    }
 
     return (
         <div className="reviews-grid">
@@ -21,19 +58,16 @@ const CustomerReviews = () => {
             
             <div className="customer-review-frame">
                 <h1>Customer Reviews</h1>
-
-                {/* useState to fill in the stars based on maScore use case statements*/}
+                    
                 <div>
-                    <h2 className="rating">{rating}/5
-                        {stars.map((star, index) => {
-                            return(
-                            <div key={index}>
-                                <img src={emptyStar} alt="empty star"/>
-                                <img src={halfStar} alt="half star"/>
-                                <img src={fullStar} alt="full star"/>
-                            </div>
-                            )
-                        })}
+                    <h2 className="rating"><strong>{rating}</strong>/5
+                        <div>
+                            {
+                                getStars(starRating).map((rating, index) => (
+                                    <img key={index} src={getStar(rating)} alt="review stars"/>
+                                ))
+                            }
+                        </div>
                     </h2>
                 </div>
 
