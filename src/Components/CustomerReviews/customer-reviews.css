@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 5% repeat(3, 1fr) 5%;
     grid-template-rows: 10% 547px 10%;
+    height: 100%;
     width: 100%;
     background: rgba(166, 221, 224, .14);
 }
@@ -84,14 +85,16 @@
         grid-column: 1 / 1;
         grid-row: 2/6;
         width: 90%;
-        height: 100vh;
-        background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-        margin: 0 5% 0 5%;
-        padding: 5% 0 5% 0;
+        height: 100%;
+        margin: -20% 0 15% 5%;
+        padding: 0 0 0 0;
     }
     .customer-review-frame h1, .customer-review-frame h4, .rating {
         text-align: left;
         padding: 0 5% 0 5%;
+    }
+    .rating img{
+        padding: 0px 0px 0px 5px;
     }
     .review-wrapper {
         display: grid;
